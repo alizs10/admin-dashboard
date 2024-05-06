@@ -4,6 +4,7 @@ import CardBody from "./CardBody";
 import CardHeader from "./CardHeader";
 import DollarIcon from "@/components/dashboard/common/ui/icons/DollarIcon";
 import UsersIcon from "@/components/dashboard/common/ui/icons/UsersIcon";
+import Activities from "./Activities";
 
 export default function Cards() {
 
@@ -27,6 +28,7 @@ export default function Cards() {
             <div className="col-span-1 grid grid-cols-1 bg-blue gap-8">
                 <Card key={5} space={'card-1'}>
                     <CardHeader title={'Recent Activities'} time={'Today'} />
+                    <Activities />
                 </Card>
             </div>
         </div>
