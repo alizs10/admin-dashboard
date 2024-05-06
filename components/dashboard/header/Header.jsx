@@ -2,7 +2,7 @@ import SearchInput from "./search/SearchInput";
 import Message from "./message/Message";
 import Notification from "./notification/Notification";
 import User from "./user/User";
-import BarsIcon from "@/components/common/ui/icons/BarsIcon";
+import BarsIcon from "@/components/dashboard/common/ui/icons/BarsIcon";
 
 export default function Header() {
     return (

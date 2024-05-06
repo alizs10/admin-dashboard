@@ -1,4 +1,4 @@
-import ChevronDownIcon from "@/components/common/ui/icons/ChevronDownIcon";
+import ChevronDownIcon from "@/components/dashboard/common/ui/icons/ChevronDownIcon";
 import Image from "next/image";
 
 function User() {

@@ -1,6 +1,6 @@
-import Breadcrumb from "@/components/dashbord/breadcrumb/Breadcrumb";
-import Header from "@/components/dashbord/header/Header";
-import Sidebar from "@/components/dashbord/sidebar/Sidebar";
+import Breadcrumb from "@/components/dashboard/breadcrumb/Breadcrumb";
+import Header from "@/components/dashboard/header/Header";
+import Sidebar from "@/components/dashboard/sidebar/Sidebar";
 
 export default function DashboardLayout({ children }) {
 

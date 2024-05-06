@@ -1,4 +1,4 @@
-import MessageIcon from "@/components/common/ui/icons/MessageIcon";
+import MessageIcon from "@/components/dashboard/common/ui/icons/MessageIcon";
 
 function Message() {
     return (

@@ -1,8 +1,8 @@
-import SquaresIcon from "@/components/common/ui/icons/SquaresIcon";
+import SquaresIcon from "@/components/dashboard/common/ui/icons/SquaresIcon";
 import Dropdown from "./Dropdown";
-import SettingsIcon from "@/components/common/ui/icons/SettingsIcon";
-import LogoutIcon from "@/components/common/ui/icons/LogoutIcon";
-import AboutIcon from "@/components/common/ui/icons/AboutIcon";
+import SettingsIcon from "@/components/dashboard/common/ui/icons/SettingsIcon";
+import LogoutIcon from "@/components/dashboard/common/ui/icons/LogoutIcon";
+import AboutIcon from "@/components/dashboard/common/ui/icons/AboutIcon";
 
 export default function Sidebar() {
     return (

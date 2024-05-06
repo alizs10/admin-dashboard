@@ -1,4 +1,4 @@
-import Cards from "@/components/dashbord/main/cards/Cards";
+import Cards from "@/components/dashboard/main/cards/Cards";
 
 export default function Page() {
 

@@ -1,4 +1,4 @@
-import BellIcon from "@/components/common/ui/icons/BellIcon";
+import BellIcon from "@/components/dashboard/common/ui/icons/BellIcon";
 
 function Notification() {
     return (

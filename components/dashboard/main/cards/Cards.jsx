@@ -1,9 +1,9 @@
-import ShoppingCartIcon from "@/components/common/ui/icons/ShoppingCartIcon";
+import ShoppingCartIcon from "@/components/dashboard/common/ui/icons/ShoppingCartIcon";
 import Card from "./Card";
 import CardBody from "./CardBody";
 import CardHeader from "./CardHeader";
-import DollarIcon from "@/components/common/ui/icons/DollarIcon";
-import UsersIcon from "@/components/common/ui/icons/UsersIcon";
+import DollarIcon from "@/components/dashboard/common/ui/icons/DollarIcon";
+import UsersIcon from "@/components/dashboard/common/ui/icons/UsersIcon";
 
 export default function Cards() {
 

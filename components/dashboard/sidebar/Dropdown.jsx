@@ -1,8 +1,8 @@
 'use client'
 
-import ChevronDownIcon from "@/components/common/ui/icons/ChevronDownIcon";
-import PlusIcon from "@/components/common/ui/icons/PlusIcon";
-import SquaresIcon from "@/components/common/ui/icons/SquaresIcon";
+import ChevronDownIcon from "@/components/dashboard/common/ui/icons/ChevronDownIcon";
+import PlusIcon from "@/components/dashboard/common/ui/icons/PlusIcon";
+import SquaresIcon from "@/components/dashboard/common/ui/icons/SquaresIcon";
 import { useState } from "react";
 
 function Dropdown() {
