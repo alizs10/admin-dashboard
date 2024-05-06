@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 body {
-    @apply bg-gray-900;
+    @apply bg-slate-100;
+}
+
+.card-1 {
+    @apply col-span-1;
+}
+
+.card-2 {
+    @apply col-span-2;
+}
+
+.card-3 {
+    @apply col-span-3;
 }

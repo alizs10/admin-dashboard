@@ -10,7 +10,11 @@ export default function DashboardLayout({ children }) {
             <section className="col-span-5 flex flex-col">
                 <Header />
                 <Breadcrumb />
-                {children}
+
+                <section className="p-5">
+                    {children}
+                </section>
+
             </section>
         </main>
     )
