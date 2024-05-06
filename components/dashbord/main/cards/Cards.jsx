@@ -13,11 +13,11 @@ export default function Cards() {
 
                 <Card key={22} space={'card-1'}>
                     <CardHeader title={'Sales'} time={'Today'} />
-                    <CardBody icon={<ShoppingCartIcon />} value={'$120'} colorScheme={'blue'} />
+                    <CardBody icon={<ShoppingCartIcon />} value={'120'} colorScheme={'blue'} />
                 </Card>
                 <Card key={222} space={'card-1'}>
                     <CardHeader title={'Revenue'} time={'This Month'} />
-                    <CardBody icon={<DollarIcon />} value={'$1240'} colorScheme={'green'} />
+                    <CardBody icon={<DollarIcon />} value={'$3,240'} colorScheme={'green'} />
                 </Card>
                 <Card key={2222} space={'card-1'}>
                     <CardHeader title={'Customers'} time={'This Year'} />
