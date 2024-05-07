@@ -7,16 +7,43 @@ import { motion } from 'framer-motion';
 
 export default function Sidebar() {
 
-    let postsDropdown = [
+    let list = [
         {
-            title: 'Posts',
-            url: '/dashboard/posts'
+            name: 'dashboard',
+            path: '/dashboard',
+            icon: <SquaresIcon />
         },
         {
-            title: 'Create',
-            url: '/dashboard/posts/create'
+            name: 'posts',
+            paths: [
+                {
+                    name: 'posts',
+                    path: '/dashboard/posts',
+                    icon: <SquaresIcon />
+                },
+                {
+                    name: 'create',
+                    path: '/dashboard/create',
+                    icon: <SquaresIcon />
+                },
+            ],
+            icon: <SquaresIcon />
         },
-
+        {
+            name: 'about',
+            path: '/dashboard/about',
+            icon: <AboutIcon />
+        },
+        {
+            name: 'settings',
+            path: '/dashboard/settings',
+            icon: <SettingsIcon />
+        },
+        {
+            name: 'logout',
+            path: '/dashboard/logout',
+            icon: <LogoutIcon />
+        },
     ]
 
     return (
@@ -36,32 +63,20 @@ export default function Sidebar() {
             <div className="border-t-2 border-slate-100">
 
                 <ul className="flex flex-col mt-8">
-                    <li className="flex items-center gap-x-2 px-5 py-3">
-                        <div className="w-5 h-5 text-slate-400">
-                            <SquaresIcon />
-                        </div>
-                        <span className="text-base text-blue-900 font-semibold">Dashboard</span>
-                    </li>
-                    <Dropdown items={postsDropdown} key={1} />
-                    {/* <Dropdown key={2} /> */}
-                    <li className="flex items-center gap-x-2 px-5 py-3">
-                        <div className="w-5 h-5 text-slate-400">
-                            <SettingsIcon />
-                        </div>
-                        <span className="text-base text-blue-900 font-semibold">Settings</span>
-                    </li>
-                    <li className="flex items-center gap-x-2 px-5 py-3">
-                        <div className="w-5 h-5 text-slate-400">
-                            <AboutIcon />
-                        </div>
-                        <span className="text-base text-blue-900 font-semibold">About</span>
-                    </li>
-                    <li className="flex items-center gap-x-2 px-5 py-3">
-                        <div className="w-5 h-5 text-slate-400">
-                            <LogoutIcon />
-                        </div>
-                        <span className="text-base text-blue-900 font-semibold">Logout</span>
-                    </li>
+                    {list.map(li => {
+                        if (li.path) {
+                            return (<li className="flex items-center gap-x-2 px-5 py-3">
+                                <div className="w-5 h-5 text-slate-400">
+                                    {li.icon}
+                                </div>
+                                <span className="text-base text-blue-900 capitalize font-semibold">{li.name}</span>
+                            </li>)
+                        }
+
+                        return (<Dropdown items={li.paths} key={li.name} />)
+
+                    })}
+
                 </ul>
             </div>
 
