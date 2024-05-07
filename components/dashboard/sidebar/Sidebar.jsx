@@ -3,10 +3,17 @@ import Dropdown from "./Dropdown";
 import SettingsIcon from "@/components/dashboard/common/ui/icons/SettingsIcon";
 import LogoutIcon from "@/components/dashboard/common/ui/icons/LogoutIcon";
 import AboutIcon from "@/components/dashboard/common/ui/icons/AboutIcon";
+import { motion } from 'framer-motion';
 
 export default function Sidebar() {
     return (
-        <section className="col-span-1 h-screen bg-white shadow-sm">
+        <motion.section
+            key={1}
+            initial={{ left: 0 }}
+            animate={{ left: 0 }}
+            exit={{ left: '-100%' }}
+            transition={{ bounce: 'none' }}
+            className="fixed top-0 left-0 bottom-0 w-[20%] bg-white shadow-sm">
 
             <div className="p-6">
                 <h1 className="text-2xl text-blue-900 font-bold">
@@ -44,6 +51,6 @@ export default function Sidebar() {
                 </ul>
             </div>
 
-        </section>
+        </motion.section>
     )
 }
