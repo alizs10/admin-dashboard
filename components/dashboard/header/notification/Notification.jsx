@@ -1,13 +1,17 @@
 import BellIcon from "@/components/dashboard/common/ui/icons/BellIcon";
+import NotificationsPopup from "./NotificationsPopup";
 
-function Notification() {
+function Notification({ toggle, popupVis }) {
     return (
-        <button className="relative p-2">
-            <div className="text-slate-600">
-                <BellIcon />
-            </div>
+        <div className="relative pt-2 pr-2">
+            <button onClick={() => toggle('notifications')} className="text-slate-600">
+                <div className="w-6 h-6">
+                    <BellIcon />
+                </div>
+            </button>
             <div className="text-[10px] rounded-md flex justify-center items-center text-white aspect-square absolute top-0 right-1 h-4 bg-blue-700">3</div>
-        </button>
+            {popupVis && (<NotificationsPopup />)}
+        </div>
     );
 }
 

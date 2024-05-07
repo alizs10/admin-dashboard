@@ -25,7 +25,7 @@ export default function Cards() {
                     <CardBody icon={<UsersIcon />} value={'144'} colorScheme={'orange'} />
                 </Card>
             </div>
-            <div className="col-span-1 grid grid-cols-1 bg-blue gap-8">
+            <div className="col-span-1 grid grid-cols-1 -z-10 gap-8">
                 <Card key={5} space={'card-1'}>
                     <CardHeader title={'Recent Activities'} time={'Today'} />
                     <Activities />
