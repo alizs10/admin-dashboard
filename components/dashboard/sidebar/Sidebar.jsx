@@ -27,26 +27,26 @@ export default function Sidebar() {
                         <div className="w-5 h-5 text-slate-400">
                             <SquaresIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">Dashboard</span>
+                        <span className="text-base text-blue-900 font-semibold">Dashboard</span>
                     </li>
                     <Dropdown key={1} />
                     <li className="flex items-center gap-x-2 px-5 py-3">
                         <div className="w-5 h-5 text-slate-400">
                             <SettingsIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">Settings</span>
+                        <span className="text-base text-blue-900 font-semibold">Settings</span>
                     </li>
                     <li className="flex items-center gap-x-2 px-5 py-3">
                         <div className="w-5 h-5 text-slate-400">
                             <AboutIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">About</span>
+                        <span className="text-base text-blue-900 font-semibold">About</span>
                     </li>
                     <li className="flex items-center gap-x-2 px-5 py-3">
                         <div className="w-5 h-5 text-slate-400">
                             <LogoutIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">Logout</span>
+                        <span className="text-base text-blue-900 font-semibold">Logout</span>
                     </li>
                 </ul>
             </div>

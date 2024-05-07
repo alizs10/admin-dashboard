@@ -32,31 +32,31 @@ function Dropdown() {
                         <div className="w-5 h-5 text-slate-400">
                             <SquaresIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">List item 1</span>
+                        <span className="text-base text-blue-900 font-semibold">List item 1</span>
                     </li>
                     <li className="flex items-center py-2 gap-x-2">
                         <div className="w-5 h-5 text-slate-400">
                             <SquaresIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">List item 1</span>
+                        <span className="text-base text-blue-900 font-semibold">List item 1</span>
                     </li>
                     <li className="flex items-center py-2 gap-x-2">
                         <div className="w-5 h-5 text-slate-400">
                             <SquaresIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">List item 1</span>
+                        <span className="text-base text-blue-900 font-semibold">List item 1</span>
                     </li>
                     <li className="flex items-center py-2 gap-x-2">
                         <div className="w-5 h-5 text-slate-400">
                             <SquaresIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">List item 1</span>
+                        <span className="text-base text-blue-900 font-semibold">List item 1</span>
                     </li>
                     <li className="flex items-center py-2 gap-x-2">
                         <div className="w-5 h-5 text-slate-400">
                             <SquaresIcon />
                         </div>
-                        <span className="text-base text-blue-900 font-bold">List item 1</span>
+                        <span className="text-base text-blue-900 font-semibold">List item 1</span>
                     </li>
                 </ul>
             )}
