@@ -12,7 +12,9 @@ function User({ toggle, popupVis }) {
                     className="rounded-full"
                     src={'/avatar.jpg'}
                     width={40}
-                    height={40} />
+                    height={40}
+                    alt="User avatar"
+                />
                 <div className="flex gap-x-1 items-center text-blue-900">
                     <span className="text-sm font-bold">Ali ZS</span>
                     <div className="w-4">

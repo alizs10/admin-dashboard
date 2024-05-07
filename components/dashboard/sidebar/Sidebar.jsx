@@ -6,6 +6,19 @@ import AboutIcon from "@/components/dashboard/common/ui/icons/AboutIcon";
 import { motion } from 'framer-motion';
 
 export default function Sidebar() {
+
+    let postsDropdown = [
+        {
+            title: 'Posts',
+            url: '/dashboard/posts'
+        },
+        {
+            title: 'Create',
+            url: '/dashboard/posts/create'
+        },
+
+    ]
+
     return (
         <motion.section
             key={1}
@@ -29,7 +42,8 @@ export default function Sidebar() {
                         </div>
                         <span className="text-base text-blue-900 font-semibold">Dashboard</span>
                     </li>
-                    <Dropdown key={1} />
+                    <Dropdown items={postsDropdown} key={1} />
+                    {/* <Dropdown key={2} /> */}
                     <li className="flex items-center gap-x-2 px-5 py-3">
                         <div className="w-5 h-5 text-slate-400">
                             <SettingsIcon />

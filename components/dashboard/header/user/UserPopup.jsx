@@ -11,7 +11,9 @@ function UserPopup() {
                     className="rounded-full"
                     src={'/avatar.jpg'}
                     width={80}
-                    height={80} />
+                    height={80}
+                    alt="User avatar"
+                />
                 <div className="flex flex-col gap-y-2 w-full">
                     <div className="flex justify-between items-center w-full">
                         <h2 className="text-lg font-bold text-blue-900">John Doe</h2>
