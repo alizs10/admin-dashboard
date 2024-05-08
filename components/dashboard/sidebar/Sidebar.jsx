@@ -23,7 +23,7 @@ export default function Sidebar() {
                 },
                 {
                     name: 'create',
-                    path: '/dashboard/create',
+                    path: '/dashboard/posts/create',
                     icon: <SquaresIcon />
                 },
             ],
