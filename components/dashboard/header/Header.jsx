@@ -25,7 +25,7 @@ export default function Header({ toggleSidebar }) {
         setPopups(popupsDefault)
     }
     return (
-        <section className="sticky top-0 p-5 bg-white text-xl text-black shadow-sm">
+        <section className="sticky top-0 z-10 p-5 bg-white text-xl text-black shadow-md">
 
             <div className="flex justify-between items-center">
 

@@ -53,7 +53,7 @@ export default function Sidebar() {
             animate={{ left: 0 }}
             exit={{ left: '-100%' }}
             transition={{ bounce: 'none' }}
-            className="fixed top-0 left-0 bottom-0 w-[20%] bg-white shadow-sm">
+            className="fixed top-0 left-0 bottom-0 w-[20%] bg-white shadow-md">
 
             <div className="p-6">
                 <h1 className="text-2xl text-blue-900 font-bold">
