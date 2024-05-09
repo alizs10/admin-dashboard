@@ -1,4 +1,4 @@
-function TextInput({ name, label, space }) {
+function Textarea({ name, label, space }) {
 
     let spaceClass;
 
@@ -17,15 +17,14 @@ function TextInput({ name, label, space }) {
 
     return (
         <div className={`${spaceClass} flex flex-col bg-white gap-y-1 border border-slate-300 text-slate-500 rounded-md p-3`}>
-            <label className="text-base text-slate-600 capitalize font-semibold">{label}</label>
-            <input
-                type="text"
+            <label className="text-base capitalize text-slate-600 font-semibold">{label}</label>
+            <textarea
                 name={name}
-                placeholder="title here..."
+                placeholder="textarea here..."
                 className="focus:outline-none text-lg p-1"
             />
         </div>
     );
 }
 
-export default TextInput;
+export default Textarea;

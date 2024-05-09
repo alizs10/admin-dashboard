@@ -1,20 +1,28 @@
-function RadioInput({ name, label, inputId }) {
+import RadioOption from "./RadioOption";
+
+function RadioInput({ name, label, space, options }) {
+
+    let spaceClass;
+
+    switch (space) {
+        case 1:
+            spaceClass = 'col-span-1'
+            break;
+        case 2:
+            spaceClass = 'col-span-2'
+            break;
+
+        default:
+            spaceClass = 'col-span-1'
+            break;
+    }
+
     return (
-        <div className="flex items-center gap-x-2">
-            <div className="inline-flex items-center">
-                <label className="relative flex items-center p-2 rounded-full cursor-pointer" htmlFor={inputId}>
-                    <input name={name} type="radio"
-                        className="before:content[''] peer relative h-4 w-4 cursor-pointer appearance-none rounded-full border border-slate-300 focus:outline-none text-blue-600 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-500 before:opacity-0 before:transition-opacity checked:border-blue-600 checked:before:bg-blue-600 hover:before:opacity-15"
-                        id={inputId} />
-                    <span
-                        className="absolute text-blue-600 transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-2.5 w-2.5" viewBox="0 0 16 16" fill="currentColor">
-                            <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
-                        </svg>
-                    </span>
-                </label>
+        <div className={`${spaceClass} flex flex-col gap-y-2 bg-white border border-slate-300 text-slate-500 rounded-md p-3`}>
+            <h2 className="text-base capitalize text-slate-600 font-semibold">{label}</h2>
+            <div className="flex flex-col gap-y-2">
+                {options.map((option, index) => (<RadioOption key={index} name={name} inputId={'option' + index} option={option} />))}
             </div>
-            <label htmlFor={inputId} className="cursor-pointer text-base text-slate-600">{label}</label>
         </div>
     );
 }
