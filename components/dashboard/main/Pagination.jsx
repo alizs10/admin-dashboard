@@ -1,4 +1,4 @@
-import ChevronDoubleLeftIcon from "../common/ui/icons/ChevronDoubleLeftIcon"
+import ChevronLeftIcon from "../common/ui/icons/ChevronLeftIcon"
 import ChevronRightIcon from "../common/ui/icons/ChevronRightIcon"
 
 const items = [
@@ -9,7 +9,7 @@ const items = [
 
 export default function Pagination() {
     return (
-        <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+        <div className="flex items-center justify-between rounded-b-md bg-white px-4 py-3 sm:px-6">
             <div className="flex flex-1 justify-between sm:hidden">
                 <a
                     href="#"
@@ -26,7 +26,7 @@ export default function Pagination() {
             </div>
             <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
                 <div>
-                    <p className="text-sm text-gray-700">
+                    <p className="text-base text-slate-600">
                         Showing <span className="font-medium">1</span> to <span className="font-medium">10</span> of{' '}
                         <span className="font-medium">97</span> results
                     </p>
@@ -38,13 +38,15 @@ export default function Pagination() {
                             className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
                         >
                             <span className="sr-only">Previous</span>
-                            <ChevronDoubleLeftIcon className="h-5 w-5" aria-hidden="true" />
+                            <div className="w-6 h-6">
+                                <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
+                            </div>
                         </a>
                         {/* Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" */}
                         <a
                             href="#"
                             aria-current="page"
-                            className="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            className="relative z-10 inline-flex items-center bg-blue-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                             1
                         </a>
@@ -86,7 +88,9 @@ export default function Pagination() {
                             className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
                         >
                             <span className="sr-only">Next</span>
-                            <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
+                            <div className="w-6 h-6">
+                                <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
+                            </div>
                         </a>
                     </nav>
                 </div>
