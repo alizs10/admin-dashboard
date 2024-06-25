@@ -4,6 +4,7 @@ import SettingsIcon from "@/components/dashboard/common/ui/icons/SettingsIcon";
 import LogoutIcon from "@/components/dashboard/common/ui/icons/LogoutIcon";
 import AboutIcon from "@/components/dashboard/common/ui/icons/AboutIcon";
 import { motion } from 'framer-motion';
+import ThemeToggle from "../common/ThemeToggle";
 
 export default function Sidebar() {
 
@@ -55,21 +56,23 @@ export default function Sidebar() {
             transition={{ bounce: 'none' }}
             className="fixed top-0 left-0 bottom-0 w-[20%] bg-white shadow-md">
 
-            <div className="p-6">
+            <div className="p-6 flex justify-between">
                 <h1 className="text-2xl text-blue-900 font-bold">
                     &#9651;ure Dashboard
                 </h1>
+
+                <ThemeToggle />
             </div>
             <div className="border-t-2 border-slate-100">
 
                 <ul className="flex flex-col mt-8">
-                    {list.map(li => {
+                    {list.map((li, index) => {
                         if (li.path) {
                             return (<li className="flex items-center gap-x-2 px-5 py-3">
-                                <div className="w-5 h-5 text-slate-400">
+                                <div className={`w-5 h-5 ${index == 0 ? 'sidebar-active' : 'text-slate-500'}`}>
                                     {li.icon}
                                 </div>
-                                <span className="text-base text-blue-900 capitalize font-semibold">{li.name}</span>
+                                <span className={`text-base ${index == 0 ? 'sidebar-active' : 'text-slate-600'} capitalize font-bold`}>{li.name}</span>
                             </li>)
                         }
 
