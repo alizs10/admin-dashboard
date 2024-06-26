@@ -15,8 +15,8 @@ function User({ toggle, popupVis }) {
                     height={40}
                     alt="User avatar"
                 />
-                <div className="flex gap-x-1 items-center text-blue-900">
-                    <span className="text-sm font-bold">Ali ZS</span>
+                <div className="flex gap-x-1 items-center text-blue-900 dark:text-blue-200">
+                    <span className="text-sm">Ali ZS</span>
                     <div className="w-4">
                         <ChevronDownIcon />
                     </div>

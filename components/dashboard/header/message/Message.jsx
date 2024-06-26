@@ -4,7 +4,7 @@ import MessagesPopup from "./MessagesPopup";
 function Message({ toggle, popupVis }) {
     return (
         <div className="relative pt-2 pr-2">
-            <button onClick={() => toggle('messages')} className="text-slate-600">
+            <button onClick={() => toggle('messages')} className="text-slate-600 dark:text-slate-400">
                 <div className="h-6 w-6">
                     <MessageIcon />
                 </div>

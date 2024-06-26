@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-slate-100;
+    @apply bg-slate-100 dark:bg-slate-900;
 }
 
 .card-1 {
@@ -19,5 +19,5 @@ body {
 }
 
 .sidebar-active {
-    @apply text-blue-800
+    @apply text-blue-800 dark:text-blue-200
 }

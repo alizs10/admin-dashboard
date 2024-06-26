@@ -4,7 +4,7 @@ import NotificationsPopup from "./NotificationsPopup";
 function Notification({ toggle, popupVis }) {
     return (
         <div className="relative pt-2 pr-2">
-            <button onClick={() => toggle('notifications')} className="text-slate-600">
+            <button onClick={() => toggle('notifications')} className="text-slate-600 dark:text-slate-400">
                 <div className="w-6 h-6">
                     <BellIcon />
                 </div>

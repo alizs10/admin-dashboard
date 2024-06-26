@@ -54,16 +54,16 @@ export default function Sidebar() {
             animate={{ left: 0 }}
             exit={{ left: '-100%' }}
             transition={{ bounce: 'none' }}
-            className="fixed top-0 left-0 bottom-0 w-[20%] bg-white shadow-md">
+            className="fixed top-0 left-0 bottom-0 w-[20%] bg-white dark:bg-slate-800 shadow-md">
 
             <div className="p-6 flex justify-between">
-                <h1 className="text-2xl text-blue-900 font-bold">
+                <h1 className="text-2xl text-blue-900 dark:text-blue-200 font-bold">
                     &#9651;ure Dashboard
                 </h1>
 
                 <ThemeToggle />
             </div>
-            <div className="border-t-2 border-slate-100">
+            <div className="">
 
                 <ul className="flex flex-col mt-8">
                     {list.map((li, index) => {
@@ -72,7 +72,7 @@ export default function Sidebar() {
                                 <div className={`w-5 h-5 ${index == 0 ? 'sidebar-active' : 'text-slate-500'}`}>
                                     {li.icon}
                                 </div>
-                                <span className={`text-base ${index == 0 ? 'sidebar-active' : 'text-slate-600'} capitalize font-bold`}>{li.name}</span>
+                                <span className={`text-base ${index == 0 ? 'sidebar-active' : 'text-slate-600 dark:text-slate-400'} capitalize font-bold`}>{li.name}</span>
                             </li>)
                         }
 

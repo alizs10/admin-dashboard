@@ -14,6 +14,7 @@ export default function DashboardLayout({ children }) {
     function toggleSidebar() {
         setSidebarVis(prevState => !prevState)
     }
+
     return (
         <main className="relative">
 

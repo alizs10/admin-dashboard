@@ -17,13 +17,13 @@ function Dropdown({ items }) {
         router.push(url)
     }
     return (
-        <li className={`${isOpen ? 'bg-slate-100' : ''}`}>
+        <li className={`${isOpen ? 'bg-slate-100 dark:bg-slate-900' : ''}`}>
             <div onClick={toggleDropdown} className="px-5 py-3 cursor-pointer flex justify-between items-center">
                 <span className="flex items-center gap-x-2">
                     <div className="w-5 h-5 text-slate-500">
                         {items[0].icon}
                     </div>
-                    <span className="text-base text-slate-600 capitalize font-bold">{items[0].name}</span>
+                    <span className="text-base text-slate-600 dark:text-slate-400 capitalize font-bold">{items[0].name}</span>
                 </span>
                 <div className="w-4 h-4 text-slate-400">
                     <ChevronDownIcon />
@@ -38,7 +38,7 @@ function Dropdown({ items }) {
                             <div className="w-5 h-5 text-slate-500">
                                 {item.icon}
                             </div>
-                            <span className="text-base text-slate-600 capitalize">{item.name}</span>
+                            <span className="text-base text-slate-600 dark:text-slate-400 capitalize">{item.name}</span>
                         </li>
                     ))}
 

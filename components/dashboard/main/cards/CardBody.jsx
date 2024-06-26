@@ -4,11 +4,11 @@ function CardBody({ colorScheme, value, icon }) {
 
     // color schemes: blue, green, orange
 
-    let greenClasses = 'bg-green-200/50 text-green-500';
-    let orangeClasses = 'bg-orange-200/50 text-orange-500';
-    let blueClasses = 'bg-blue-200/50 text-blue-500';
+    let greenClasses = 'bg-green-200/50 dark:bg-green-400/20 text-green-500';
+    let orangeClasses = 'bg-orange-200/50 dark:bg-orange-400/20 text-orange-500';
+    let blueClasses = 'bg-blue-200/50 dark:bg-blue-400/20 text-blue-500';
 
-    let scheme = 'bg-green-200/50 text-green-500'
+    let scheme = 'bg-green-200/50 dark:bg-green-400/20 text-green-500'
 
     switch (colorScheme) {
         case 'blue':
@@ -34,7 +34,7 @@ function CardBody({ colorScheme, value, icon }) {
                 </div>
             </div>
             <div className="flex flex-col justify-center gap-y-1">
-                <span className="text-xl text-blue-900 font-bold">{value}</span>
+                <span className="text-xl text-blue-900 dark:text-blue-200 font-bold">{value}</span>
                 <div className="flex items-center gap-x-2">
                     <span className="text-sm text-green-600 font-bold">24%</span>
                     <span className="text-xs text-slate-400">increase</span>

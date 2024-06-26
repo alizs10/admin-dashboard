@@ -16,8 +16,8 @@ function UserPopup() {
                 />
                 <div className="flex flex-col gap-y-2 w-full">
                     <div className="flex justify-between items-center w-full">
-                        <h2 className="text-lg font-bold text-blue-900">John Doe</h2>
-                        <div className="w-6 h-6 text-blue-900">
+                        <h2 className="text-lg font-bold text-blue-900 dark:text-blue-200">John Doe</h2>
+                        <div className="w-6 h-6 text-blue-900 dark:text-blue-200">
                             <ChevronRightIcon />
                         </div>
                     </div>
