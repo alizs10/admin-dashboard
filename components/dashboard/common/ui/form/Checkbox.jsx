@@ -3,7 +3,7 @@ function Checkbox({ name, label, inputId }) {
         <div class="inline-flex items-center gap-x-2">
             <label class="relative flex items-center p-2 rounded-full cursor-pointer" htmlFor={inputId}>
                 <input type="checkbox"
-                    class="before:content[''] focus:outline-none peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-slate-300 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-10 before:w-10 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-500 before:opacity-0 before:transition-opacity checked:border-blue-600 checked:bg-blue-600 checked:before:bg-blue-600 hover:before:opacity-15"
+                    class="before:content[''] focus:outline-none peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-slate-300 dark:border-slate-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-10 before:w-10 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-slate-500 before:opacity-0 before:transition-opacity checked:border-blue-600 checked:bg-blue-600 checked:before:bg-blue-600 dark:checked:border-blue-400 dark:checked:bg-blue-400 dark:checked:before:bg-blue-400 hover:before:opacity-15"
                     name={name}
                     id={inputId} />
                 <span
@@ -16,7 +16,7 @@ function Checkbox({ name, label, inputId }) {
                     </svg>
                 </span>
             </label>
-            <label class="mt-px font-light text-slate-500 cursor-pointer select-none" htmlFor={inputId}>
+            <label class="mt-px font-light text-slate-500 dark:text-slate-400 cursor-pointer select-none" htmlFor={inputId}>
                 {label}
             </label>
         </div>

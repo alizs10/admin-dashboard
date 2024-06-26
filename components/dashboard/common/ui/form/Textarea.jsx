@@ -16,12 +16,12 @@ function Textarea({ name, label, space }) {
     }
 
     return (
-        <div className={`${spaceClass} flex flex-col bg-white gap-y-1 border border-slate-300 text-slate-500 rounded-md p-3`}>
-            <label className="text-base capitalize text-slate-600 font-semibold">{label}</label>
+        <div className={`${spaceClass} flex flex-col bg-white dark:bg-slate-800 gap-y-1 border border-slate-300 dark:border-slate-700 text-slate-500 rounded-md p-3`}>
+            <label className="text-base capitalize text-slate-600 dark:text-slate-300">{label}</label>
             <textarea
                 name={name}
                 placeholder="textarea here..."
-                className="focus:outline-none text-lg p-1"
+                className="focus:outline-none text-lg p-1 bg-transparent text-slate-600 dark:text-slate-400"
             />
         </div>
     );
