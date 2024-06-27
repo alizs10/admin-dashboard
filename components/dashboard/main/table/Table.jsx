@@ -1,5 +1,6 @@
 'use client'
 
+import { useToast } from "@/components/ui/use-toast";
 import DeleteIcon from "../../common/ui/icons/DeleteIcon";
 import EditIcon from "../../common/ui/icons/EditIcon";
 import EyeIcon from "../../common/ui/icons/EyeIcon";
@@ -18,6 +19,14 @@ import {
 
 
 function Table() {
+
+    const { toast } = useToast()
+
+    function handleDelete() {
+        toast({
+            description: "Your Post Deleted Successfully!"
+        })
+    }
 
     return (
         <table className="w-full table table-auto overflow-hidden rounded-t-md">
@@ -68,7 +77,7 @@ function Table() {
                                     </AlertDialogHeader>
                                     <AlertDialogFooter>
                                         <AlertDialogCancel>Cancel</AlertDialogCancel>
-                                        <AlertDialogAction>Delete</AlertDialogAction>
+                                        <AlertDialogAction onClick={handleDelete}>Delete</AlertDialogAction>
                                     </AlertDialogFooter>
                                 </AlertDialogContent>
                             </AlertDialog>

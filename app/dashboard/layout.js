@@ -6,6 +6,7 @@ import Sidebar from "@/components/dashboard/sidebar/Sidebar";
 import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { motion } from 'framer-motion';
+import { Toaster } from "@/components/ui/toaster";
 
 export default function DashboardLayout({ children }) {
 
@@ -36,6 +37,7 @@ export default function DashboardLayout({ children }) {
 
                 </motion.section>
             </AnimatePresence>
+            <Toaster />
         </main>
     )
 
