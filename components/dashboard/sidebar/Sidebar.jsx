@@ -5,13 +5,17 @@ import LogoutIcon from "@/components/dashboard/common/ui/icons/LogoutIcon";
 import AboutIcon from "@/components/dashboard/common/ui/icons/AboutIcon";
 import { motion } from 'framer-motion';
 import ThemeToggle from "../common/ThemeToggle";
+import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
+
+    const pathname = usePathname();
 
     let list = [
         {
             name: 'dashboard',
             path: '/dashboard',
+            active: pathname === '/dashboard' ? true : false,
             icon: <SquaresIcon />
         },
         {
@@ -20,11 +24,13 @@ export default function Sidebar() {
                 {
                     name: 'posts',
                     path: '/dashboard/posts',
+                    active: pathname === '/dashboard/posts' ? true : false,
                     icon: <SquaresIcon />
                 },
                 {
                     name: 'create',
                     path: '/dashboard/posts/create',
+                    active: pathname === '/dashboard/posts/create' ? true : false,
                     icon: <SquaresIcon />
                 },
             ],
@@ -33,11 +39,13 @@ export default function Sidebar() {
         {
             name: 'about',
             path: '/dashboard/about',
+            active: pathname === '/dashboard/about' ? true : false,
             icon: <AboutIcon />
         },
         {
             name: 'settings',
             path: '/dashboard/settings',
+            active: pathname === '/dashboard/settings' ? true : false,
             icon: <SettingsIcon />
         },
         {
@@ -66,13 +74,13 @@ export default function Sidebar() {
             <div className="">
 
                 <ul className="flex flex-col mt-8">
-                    {list.map((li, index) => {
+                    {list.map((li) => {
                         if (li.path) {
-                            return (<li className="flex items-center gap-x-2 px-5 py-3">
-                                <div className={`w-5 h-5 ${index == 0 ? 'sidebar-active' : 'text-slate-500'}`}>
+                            return (<li className={`flex cursor-pointer items-center gap-x-2 px-5 py-3 ${li.active ? 'text-blue-800 dark:text-blue-300' : 'text-slate-400'}`}>
+                                <div className={`w-5 h-5`}>
                                     {li.icon}
                                 </div>
-                                <span className={`text-base ${index == 0 ? 'sidebar-active' : 'text-slate-600 dark:text-slate-400'} capitalize font-bold`}>{li.name}</span>
+                                <span className={`text-base capitalize`}>{li.name}</span>
                             </li>)
                         }
 
