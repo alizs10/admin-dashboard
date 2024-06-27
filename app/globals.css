@@ -2,22 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
-    @apply bg-slate-100 dark:bg-slate-900;
-}
-
-.card-1 {
-    @apply col-span-1;
-}
-
-.card-2 {
-    @apply col-span-2;
-}
-
-.card-3 {
-    @apply col-span-3;
-}
-
-.sidebar-active {
-    @apply text-blue-800 dark:text-blue-200
+  @apply bg-slate-200 dark:bg-slate-900
 }

@@ -4,7 +4,21 @@ import DeleteIcon from "../../common/ui/icons/DeleteIcon";
 import EditIcon from "../../common/ui/icons/EditIcon";
 import EyeIcon from "../../common/ui/icons/EyeIcon";
 
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+
+
 function Table() {
+
     return (
         <table className="w-full table table-auto overflow-hidden rounded-t-md">
 
@@ -35,12 +49,29 @@ function Table() {
                                 </div>
                                 Edit
                             </button>
-                            <button className="px-2 py-1 rounded-md bg-red-100 dark:bg-red-300/30 shadow-md text-sm text-red-500 dark:text-red-400 flex items-center gap-x-1">
-                                <div className="w-4 h-4">
-                                    <DeleteIcon />
-                                </div>
-                                Delete
-                            </button>
+                            <AlertDialog>
+                                <AlertDialogTrigger>
+                                    <div className="px-2 py-1 rounded-md bg-red-100 dark:bg-red-300/30 shadow-md text-sm text-red-500 dark:text-red-400 flex items-center gap-x-1">
+                                        <div className="w-4 h-4">
+                                            <DeleteIcon />
+                                        </div>
+                                        Delete
+                                    </div>
+                                </AlertDialogTrigger>
+                                <AlertDialogContent>
+                                    <AlertDialogHeader>
+                                        <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                                        <AlertDialogDescription>
+                                            This action cannot be undone. This will permanently delete
+                                            and remove data from servers.
+                                        </AlertDialogDescription>
+                                    </AlertDialogHeader>
+                                    <AlertDialogFooter>
+                                        <AlertDialogCancel>Cancel</AlertDialogCancel>
+                                        <AlertDialogAction>Delete</AlertDialogAction>
+                                    </AlertDialogFooter>
+                                </AlertDialogContent>
+                            </AlertDialog>
                             <button className="px-2 py-1 rounded-md bg-emerald-100 dark:bg-emerald-300/30 shadow-md text-sm text-emerald-500 dark:text-emerald-300 flex items-center gap-x-1">
                                 <div className="w-4 h-4">
                                     <EyeIcon />
