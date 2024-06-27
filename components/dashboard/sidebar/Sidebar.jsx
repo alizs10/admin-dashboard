@@ -76,7 +76,7 @@ export default function Sidebar() {
                 <ul className="flex flex-col mt-8">
                     {list.map((li) => {
                         if (li.path) {
-                            return (<li className={`flex cursor-pointer items-center gap-x-2 px-5 py-3 ${li.active ? 'text-blue-800 dark:text-blue-300' : 'text-slate-400'}`}>
+                            return (<li className={`flex cursor-pointer items-center gap-x-2 px-5 py-3 ${li.active ? 'text-blue-800 dark:text-blue-300' : 'text-slate-600 dark:text-slate-400'}`}>
                                 <div className={`w-5 h-5`}>
                                     {li.icon}
                                 </div>
