@@ -8,7 +8,7 @@ function UserPopup() {
         <PopupContainer>
             <div className="w-full flex items-center gap-x-4">
                 <Image
-                    className="rounded-full"
+                    className="rounded-full aspect-square object-cover"
                     src={'/avatar.jpg'}
                     width={80}
                     height={80}

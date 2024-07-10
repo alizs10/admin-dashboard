@@ -38,6 +38,24 @@ export default function Sidebar({ toggleSidebar }) {
             icon: <SquaresIcon />
         },
         {
+            name: 'skills',
+            paths: [
+                {
+                    name: 'skills',
+                    path: '/dashboard/posts',
+                    active: pathname === '/dashboard/posts' ? true : false,
+                    icon: <SquaresIcon />
+                },
+                {
+                    name: 'create',
+                    path: '/dashboard/posts/create',
+                    active: pathname === '/dashboard/posts/create' ? true : false,
+                    icon: <SquaresIcon />
+                },
+            ],
+            icon: <SquaresIcon />
+        },
+        {
             name: 'about',
             path: '/dashboard/about',
             active: pathname === '/dashboard/about' ? true : false,

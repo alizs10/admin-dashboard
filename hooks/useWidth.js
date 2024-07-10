@@ -10,14 +10,18 @@ export default function useWidth() {
         function handleResize() {
 
             if (window.innerWidth < 640) {
-                setBreakpointPrefix('sm')
+                setBreakpointPrefix('xs')
             }
 
             if (window.innerWidth >= 640 && window.innerWidth < 768) {
+                setBreakpointPrefix('sm')
+            }
+
+            if (window.innerWidth >= 768 && window.innerWidth < 1024) {
                 setBreakpointPrefix('md')
             }
 
-            if (window.innerWidth >= 768 && window.innerWidth < 1280) {
+            if (window.innerWidth >= 1024 && window.innerWidth <= 1280) {
                 setBreakpointPrefix('lg')
             }
 

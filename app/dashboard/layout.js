@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { Toaster } from "@/components/ui/toaster";
 import useWidth from "@/hooks/useWidth";
 import PopupCleaner from "@/components/dashboard/header/PopupCleaner";
+import { usePathname } from "next/navigation";
 
 export default function DashboardLayout({ children }) {
 
@@ -19,11 +20,20 @@ export default function DashboardLayout({ children }) {
     }
 
     const { width, breakpointPrefix } = useWidth()
+    const pathname = usePathname();
 
     useEffect(() => {
 
-        console.log(breakpointPrefix)
-        if (breakpointPrefix === 'lg') {
+        if (width < 1024) {
+            setSidebarVis(false)
+        }
+
+    }, [pathname])
+
+
+    useEffect(() => {
+
+        if (width < 1024) {
             setSidebarVis(false)
         }
 

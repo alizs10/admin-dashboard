@@ -9,7 +9,7 @@ function User({ toggle, popupVis }) {
             <button onClick={() => toggle('user')} className="md:ml-4 flex gap-x-2 items-center">
 
                 <Image
-                    className="rounded-full"
+                    className="rounded-full aspect-square object-cover"
                     src={'/avatar.jpg'}
                     width={40}
                     height={40}
