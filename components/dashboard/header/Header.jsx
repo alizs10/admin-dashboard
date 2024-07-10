@@ -25,17 +25,17 @@ export default function Header({ toggleSidebar }) {
         setPopups(popupsDefault)
     }
     return (
-        <section className="sticky top-0 z-10 p-5 bg-white dark:bg-slate-800 text-xl text-black shadow-md">
+        <section className="sticky top-0 z-10 p-3 md:p-5 bg-white dark:bg-slate-800 text-xl text-black shadow-md">
 
             <div className="flex justify-between items-center">
 
-                <div className="w-1/3 flex items-center gap-x-4">
-                    <button onClick={toggleSidebar} className="w-[10%] p-2 text-slate-600 dark:text-slate-400">
+                <div className="w-3/5 lg:w-1/3 flex items-center gap-x-4">
+                    <button onClick={toggleSidebar} className="size-6 text-slate-600 dark:text-slate-400">
                         <BarsIcon />
                     </button>
                     <SearchInput />
                 </div>
-                <div className="relative flex gap-x-4 items-center">
+                <div className="relative flex gap-x-2 md:gap-x-4 items-center">
                     <Notification toggle={togglePopup} popupVis={popups.notifications} />
                     <Message toggle={togglePopup} popupVis={popups.messages} />
                     <User toggle={togglePopup} popupVis={popups.user} />

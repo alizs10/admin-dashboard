@@ -6,8 +6,9 @@ import AboutIcon from "@/components/dashboard/common/ui/icons/AboutIcon";
 import { motion } from 'framer-motion';
 import ThemeToggle from "../common/ThemeToggle";
 import { usePathname } from "next/navigation";
+import BarsLeftIcon from "../common/ui/icons/BarsLeftIcon";
 
-export default function Sidebar() {
+export default function Sidebar({ toggleSidebar }) {
 
     const pathname = usePathname();
 
@@ -58,16 +59,21 @@ export default function Sidebar() {
     return (
         <motion.section
             key={1}
-            initial={{ left: 0 }}
+            initial={{ left: '-100%' }}
             animate={{ left: 0 }}
             exit={{ left: '-100%' }}
             transition={{ bounce: 'none' }}
-            className="fixed top-0 left-0 bottom-0 w-[20%] bg-white dark:bg-slate-800 shadow-md">
+            className="fixed top-0 bottom-0 z-[99999] w-4/5 md:w-1/2 lg:w-[30%] 2xl:w-1/5 bg-white dark:bg-slate-800 shadow-md">
 
             <div className="p-6 flex justify-between">
-                <h1 className="text-2xl text-blue-900 dark:text-blue-200 font-bold">
-                    &#9651;ure Dashboard
-                </h1>
+                <div className="flex gap-x-4 items-center">
+                    <button onClick={toggleSidebar} className="lg:hidden size-6 text-slate-600 dark:text-slate-400">
+                        <BarsLeftIcon />
+                    </button>
+                    <h1 className="text-2xl text-blue-900 dark:text-blue-200 font-bold">
+                        &#9651;ure Dashboard
+                    </h1>
+                </div>
 
                 <ThemeToggle />
             </div>

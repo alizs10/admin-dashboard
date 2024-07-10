@@ -29,11 +29,14 @@ function Table() {
     }
 
     return (
-        <table className="w-full table table-auto overflow-hidden rounded-t-md">
+        <table className="w-full table table-auto rounded-t-md overflow-hidden">
 
             <thead>
                 <tr className="bg-white dark:bg-slate-800 text-left">
                     <th className="capitalize px-5 py-3 border border-t-0 border-l-0 border-slate-300 dark:border-slate-500">#</th>
+                    <th className="capitalize px-5 py-3 border border-t-0 border-slate-300 dark:border-slate-500">title</th>
+                    <th className="capitalize px-5 py-3 border border-t-0 border-slate-300 dark:border-slate-500">title</th>
+                    <th className="capitalize px-5 py-3 border border-t-0 border-slate-300 dark:border-slate-500">title</th>
                     <th className="capitalize px-5 py-3 border border-t-0 border-slate-300 dark:border-slate-500">title</th>
                     <th className="capitalize px-5 py-3 border border-t-0 border-slate-300 dark:border-slate-500">status</th>
                     <th className="capitalize px-5 py-3 border border-t-0 border-r-0 border-slate-300 dark:border-slate-500">actions</th>
@@ -44,6 +47,9 @@ function Table() {
                 <tr className="odd:bg-slate-100 dark:odd:bg-slate-700 even:bg-slate-50 dark:even:bg-slate-600">
                     <td className="px-5 py-3 border border-l-0 border-slate-300 dark:border-slate-500">1</td>
                     <td className="px-5 py-3 border border-slate-300 dark:border-slate-500">my title</td>
+                    <td className="px-5 py-3 border border-slate-300 dark:border-slate-500">my title</td>
+                    <td className="px-5 py-3 border border-slate-300 dark:border-slate-500">my title</td>
+                    <td className="px-5 py-3 border border-slate-300 dark:border-slate-500">my title</td>
                     <td className="px-5 py-3 border border-slate-300 dark:border-slate-500">
                         <label className="inline-flex items-center cursor-pointer">
                             <input type="checkbox" value="" className="sr-only peer" />
@@ -51,7 +57,7 @@ function Table() {
                         </label>
                     </td>
                     <td className="px-5 py-3 border border-r-0 border-slate-300 dark:border-slate-500">
-                        <div className="flex flex-nowrap gap-x-2 items-center">
+                        <div className="flex flex-nowrap gap-2 items-center">
                             <button className="px-2 py-1 rounded-md bg-yellow-100 dark:bg-yellow-300/30 shadow-md text-sm text-yellow-600 dark:text-yellow-200 flex items-center gap-x-1">
                                 <div className="w-4 h-4">
                                     <EditIcon />

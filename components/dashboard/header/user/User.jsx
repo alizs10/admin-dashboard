@@ -6,7 +6,7 @@ function User({ toggle, popupVis }) {
     return (
         <div className="relative">
 
-            <button onClick={() => toggle('user')} className="ml-4 flex gap-x-2 items-center">
+            <button onClick={() => toggle('user')} className="md:ml-4 flex gap-x-2 items-center">
 
                 <Image
                     className="rounded-full"
@@ -15,7 +15,7 @@ function User({ toggle, popupVis }) {
                     height={40}
                     alt="User avatar"
                 />
-                <div className="flex gap-x-1 items-center text-blue-900 dark:text-blue-200">
+                <div className="gap-x-1 items-center hidden md:flex text-blue-900 dark:text-blue-200">
                     <span className="text-sm">Ali ZS</span>
                     <div className="w-4">
                         <ChevronDownIcon />

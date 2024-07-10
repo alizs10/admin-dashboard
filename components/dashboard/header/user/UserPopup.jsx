@@ -6,7 +6,7 @@ import UserIcon from "../../common/ui/icons/UserIcon";
 function UserPopup() {
     return (
         <PopupContainer>
-            <div className="w-[250px] flex items-center gap-x-4">
+            <div className="w-full flex items-center gap-x-4">
                 <Image
                     className="rounded-full"
                     src={'/avatar.jpg'}
