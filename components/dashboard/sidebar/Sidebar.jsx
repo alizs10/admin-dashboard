@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import ThemeToggle from "../common/ThemeToggle";
 import { usePathname } from "next/navigation";
 import BarsLeftIcon from "../common/ui/icons/BarsLeftIcon";
+import Link from "next/link";
+import DocSearchIcon from "../common/ui/icons/DocSearchIcon";
 
 export default function Sidebar({ toggleSidebar }) {
 
@@ -56,16 +58,22 @@ export default function Sidebar({ toggleSidebar }) {
             icon: <SquaresIcon />
         },
         {
-            name: 'about',
-            path: '/dashboard/about',
-            active: pathname === '/dashboard/about' ? true : false,
-            icon: <AboutIcon />
+            name: 'seo',
+            path: '/dashboard/seo',
+            active: pathname === '/dashboard/seo' ? true : false,
+            icon: <DocSearchIcon />
         },
         {
             name: 'settings',
             path: '/dashboard/settings',
             active: pathname === '/dashboard/settings' ? true : false,
             icon: <SettingsIcon />
+        },
+        {
+            name: 'about',
+            path: '/dashboard/about',
+            active: pathname === '/dashboard/about' ? true : false,
+            icon: <AboutIcon />
         },
         {
             name: 'logout',
@@ -100,12 +108,16 @@ export default function Sidebar({ toggleSidebar }) {
                 <ul className="flex flex-col mt-8">
                     {list.map((li) => {
                         if (li.path) {
-                            return (<li className={`flex cursor-pointer items-center gap-x-2 px-5 py-3 ${li.active ? 'text-blue-800 dark:text-blue-300' : 'text-slate-600 dark:text-slate-400'}`}>
-                                <div className={`w-5 h-5`}>
-                                    {li.icon}
-                                </div>
-                                <span className={`text-base capitalize`}>{li.name}</span>
-                            </li>)
+                            return (
+                                <Link href={li.path}>
+                                    <li className={`flex cursor-pointer items-center gap-x-2 px-5 py-3 ${li.active ? 'text-blue-800 dark:text-blue-300' : 'text-slate-600 dark:text-slate-400'}`}>
+                                        <div className={`w-5 h-5`}>
+                                            {li.icon}
+                                        </div>
+                                        <span className={`text-base capitalize`}>{li.name}</span>
+                                    </li>
+                                </Link>
+                            )
                         }
 
                         return (<Dropdown items={li.paths} key={li.name} />)

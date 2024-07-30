@@ -1,4 +1,4 @@
-function TextInput({ name, label, space }) {
+function TextInput({ name, label, space, hint }) {
 
     let spaceClass;
 
@@ -21,9 +21,14 @@ function TextInput({ name, label, space }) {
             <input
                 type="text"
                 name={name}
-                placeholder="title here..."
+                placeholder={label + " here..."}
                 className="bg-transparent focus:outline-none text-lg p-1 dark:text-slate-400"
             />
+
+            {hint && (
+                <p className="text-xs text-slate-500 dark:text-slate-400">&#x2022; {hint}</p>
+            )}
+
         </div>
     );
 }
