@@ -29,12 +29,12 @@ function Dropdown({ items }) {
         <li className={`${isOpen ? 'bg-slate-100 dark:bg-slate-900' : ''}`}>
             <div onClick={toggleDropdown} className="px-5 py-3 cursor-pointer flex justify-between items-center">
                 <div className="flex items-center gap-x-2 text-slate-600 dark:text-slate-400">
-                    <div className="w-5 h-5">
+                    <div className="size-5">
                         {items[0].icon}
                     </div>
                     <span className="text-base capitalize">{items[0].name}</span>
                 </div>
-                <div className="w-4 h-4 text-slate-400">
+                <div className="size-4 text-slate-400">
                     <ChevronDownIcon />
                 </div>
             </div>

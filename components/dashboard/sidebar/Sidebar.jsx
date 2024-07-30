@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import BarsLeftIcon from "../common/ui/icons/BarsLeftIcon";
 import Link from "next/link";
 import DocSearchIcon from "../common/ui/icons/DocSearchIcon";
+import AcademicCapIcon from "../common/ui/icons/AcademicCapIcon";
 
 export default function Sidebar({ toggleSidebar }) {
 
@@ -64,6 +65,12 @@ export default function Sidebar({ toggleSidebar }) {
             icon: <DocSearchIcon />
         },
         {
+            name: 'administrators',
+            path: '/dashboard/admins',
+            active: pathname === '/dashboard/admins' ? true : false,
+            icon: <AcademicCapIcon />
+        },
+        {
             name: 'settings',
             path: '/dashboard/settings',
             active: pathname === '/dashboard/settings' ? true : false,
@@ -111,7 +118,7 @@ export default function Sidebar({ toggleSidebar }) {
                             return (
                                 <Link href={li.path}>
                                     <li className={`flex cursor-pointer items-center gap-x-2 px-5 py-3 ${li.active ? 'text-blue-800 dark:text-blue-300' : 'text-slate-600 dark:text-slate-400'}`}>
-                                        <div className={`w-5 h-5`}>
+                                        <div className={`size-5`}>
                                             {li.icon}
                                         </div>
                                         <span className={`text-base capitalize`}>{li.name}</span>

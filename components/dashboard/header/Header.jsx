@@ -33,7 +33,7 @@ export default function Header({ toggleSidebar }) {
                     <button onClick={toggleSidebar} className="size-6 text-slate-600 dark:text-slate-400">
                         <BarsIcon />
                     </button>
-                    <SearchInput />
+                    <SearchInput placeholder={'Search'} />
                 </div>
                 <div className="relative flex gap-x-2 md:gap-x-4 items-center">
                     <Notification toggle={togglePopup} popupVis={popups.notifications} />

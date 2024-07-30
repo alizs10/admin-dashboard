@@ -9,7 +9,7 @@ export default function Breadcrumb() {
     const [pages, setPages] = useState(pathname.replace("/", "").split("/"))
 
     useEffect(() => {
-        setPages(pathname.replace("/", "").split("/"))
+        setPages(pathname.replace("/", "").replace("-", " ").split("/"))
     }, [pathname])
 
     function handleRedirect(pageIndex) {
