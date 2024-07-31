@@ -1,4 +1,4 @@
-import ShoppingCartIcon from "@/components/dashboard/common/ui/icons/ShoppingCartIcon";
+import ShoppingCartIcon from "@/components/ui/icons/ShoppingCartIcon";
 
 function CardBody({ colorScheme, value, icon }) {
 

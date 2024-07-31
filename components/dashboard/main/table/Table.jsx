@@ -1,9 +1,9 @@
 'use client'
 
 import { useToast } from "@/components/ui/use-toast";
-import DeleteIcon from "../../common/ui/icons/DeleteIcon";
-import EditIcon from "../../common/ui/icons/EditIcon";
-import EyeIcon from "../../common/ui/icons/EyeIcon";
+import DeleteIcon from "../../../ui/icons/DeleteIcon";
+import EditIcon from "../../../ui/icons/EditIcon";
+import EyeIcon from "../../../ui/icons/EyeIcon";
 
 import {
     AlertDialog,

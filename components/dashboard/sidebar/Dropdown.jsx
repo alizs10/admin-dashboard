@@ -1,6 +1,6 @@
 'use client'
 
-import ChevronDownIcon from "@/components/dashboard/common/ui/icons/ChevronDownIcon";
+import ChevronDownIcon from "@/components/ui/icons/ChevronDownIcon";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation'
 

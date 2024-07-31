@@ -1,5 +1,5 @@
-import ChevronLeftIcon from "../common/ui/icons/ChevronLeftIcon"
-import ChevronRightIcon from "../common/ui/icons/ChevronRightIcon"
+import ChevronLeftIcon from "../../ui/icons/ChevronLeftIcon"
+import ChevronRightIcon from "../../ui/icons/ChevronRightIcon"
 
 const items = [
     { id: 1, title: 'Back End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },

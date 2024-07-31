@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 function CKInput({ name, label, space }) {
-    const Editor = dynamic(() => import("@/components/dashboard/common/ui/form/Editor"), { ssr: false });
+    const Editor = dynamic(() => import("@/components/dashboard/common/form/Editor"), { ssr: false });
 
     let spaceClass;
 

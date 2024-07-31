@@ -1,6 +1,6 @@
-import TextInput from "@/components/dashboard/common/ui/form/TextInput";
-import ArrowPathIcon from "@/components/dashboard/common/ui/icons/ArrowPathIcon";
-import XIcon from "@/components/dashboard/common/ui/icons/XIcon";
+import TextInput from "@/components/dashboard/common/form/TextInput";
+import ArrowPathIcon from "@/components/ui/icons/ArrowPathIcon";
+import XIcon from "@/components/ui/icons/XIcon";
 
 function SettingsIndexPage() {
     return (

@@ -1,4 +1,4 @@
-import MessageIcon from "@/components/dashboard/common/ui/icons/MessageIcon";
+import MessageIcon from "@/components/ui/icons/MessageIcon";
 import MessagesPopup from "./MessagesPopup";
 
 function Message({ toggle, popupVis }) {

@@ -1,8 +1,8 @@
-import UserIcon from "@/components/dashboard/common/ui/icons/UserIcon";
+import UserIcon from "@/components/ui/icons/UserIcon";
 import SearchInput from "@/components/dashboard/header/search/SearchInput";
 import Image from "next/image";
-import XIcon from "@/components/dashboard/common/ui/icons/XIcon";
-import ArrowPathIcon from "@/components/dashboard/common/ui/icons/ArrowPathIcon";
+import XIcon from "@/components/ui/icons/XIcon";
+import ArrowPathIcon from "@/components/ui/icons/ArrowPathIcon";
 
 import {
     Dialog,
@@ -15,7 +15,7 @@ import {
     DialogClose
 } from "@/components/ui/dialog"
 
-import SelectInput from "@/components/dashboard/common/ui/form/SelectInput";
+import SelectInput from "@/components/dashboard/common/form/SelectInput";
 
 
 function page() {

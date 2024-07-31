@@ -1,17 +1,17 @@
-import SquaresIcon from "@/components/dashboard/common/ui/icons/SquaresIcon";
+import SquaresIcon from "@/components/ui/icons/SquaresIcon";
 import Dropdown from "./Dropdown";
-import SettingsIcon from "@/components/dashboard/common/ui/icons/SettingsIcon";
-import LogoutIcon from "@/components/dashboard/common/ui/icons/LogoutIcon";
-import AboutIcon from "@/components/dashboard/common/ui/icons/AboutIcon";
+import SettingsIcon from "@/components/ui/icons/SettingsIcon";
+import LogoutIcon from "@/components/ui/icons/LogoutIcon";
+import AboutIcon from "@/components/ui/icons/AboutIcon";
 import { motion } from 'framer-motion';
 import ThemeToggle from "../common/ThemeToggle";
 import { usePathname } from "next/navigation";
-import BarsLeftIcon from "../common/ui/icons/BarsLeftIcon";
+import BarsLeftIcon from "../../ui/icons/BarsLeftIcon";
 import Link from "next/link";
-import DocSearchIcon from "../common/ui/icons/DocSearchIcon";
-import AcademicCapIcon from "../common/ui/icons/AcademicCapIcon";
-import LockClosedIcon from "../common/ui/icons/LockClosedIcon";
-import UsersIcon from "../common/ui/icons/UsersIcon";
+import DocSearchIcon from "../../ui/icons/DocSearchIcon";
+import AcademicCapIcon from "../../ui/icons/AcademicCapIcon";
+import LockClosedIcon from "../../ui/icons/LockClosedIcon";
+import UsersIcon from "../../ui/icons/UsersIcon";
 
 export default function Sidebar({ toggleSidebar }) {
 

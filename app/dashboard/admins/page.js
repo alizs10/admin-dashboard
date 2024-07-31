@@ -1,4 +1,4 @@
-import PlusIcon from "@/components/dashboard/common/ui/icons/PlusIcon";
+import PlusIcon from "@/components/ui/icons/PlusIcon";
 import Pagination from "@/components/dashboard/main/Pagination";
 import Table from "@/components/dashboard/main/table/Table";
 import Link from "next/link";

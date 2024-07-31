@@ -1,5 +1,5 @@
-import BellIcon from "../../common/ui/icons/BellIcon";
-import EyeIcon from "../../common/ui/icons/EyeIcon";
+import BellIcon from "../../../ui/icons/BellIcon";
+import EyeIcon from "../../../ui/icons/EyeIcon";
 import PopupContainer from "../PopupContainer";
 
 function NotificationsPopup() {

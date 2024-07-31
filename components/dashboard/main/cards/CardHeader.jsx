@@ -1,4 +1,4 @@
-import EllipsisHIcon from "@/components/dashboard/common/ui/icons/EllipsisHIcon";
+import EllipsisHIcon from "@/components/ui/icons/EllipsisHIcon";
 
 function CardHeader({ title, time }) {
     return (

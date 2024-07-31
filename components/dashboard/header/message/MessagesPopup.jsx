@@ -1,6 +1,6 @@
-import BookIcon from "../../common/ui/icons/BookIcon";
-import EyeIcon from "../../common/ui/icons/EyeIcon";
-import MessageIcon from "../../common/ui/icons/MessageIcon";
+import BookIcon from "../../../ui/icons/BookIcon";
+import EyeIcon from "../../../ui/icons/EyeIcon";
+import MessageIcon from "../../../ui/icons/MessageIcon";
 import PopupContainer from "../PopupContainer";
 
 function MessagesPopup() {

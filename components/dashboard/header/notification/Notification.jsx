@@ -1,4 +1,4 @@
-import BellIcon from "@/components/dashboard/common/ui/icons/BellIcon";
+import BellIcon from "@/components/ui/icons/BellIcon";
 import NotificationsPopup from "./NotificationsPopup";
 
 function Notification({ toggle, popupVis }) {

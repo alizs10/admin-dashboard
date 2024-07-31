@@ -1,15 +1,15 @@
 
-import CKInput from "@/components/dashboard/common/ui/form/CKInput";
-import CheckboxInput from "@/components/dashboard/common/ui/form/CheckboxInput";
-import DateInput from "@/components/dashboard/common/ui/form/DateInput";
-import Form from "@/components/dashboard/common/ui/form/Form";
-import RadioInput from "@/components/dashboard/common/ui/form/RadioInput";
-import SelectInput from "@/components/dashboard/common/ui/form/SelectInput";
-import TextInput from "@/components/dashboard/common/ui/form/TextInput";
-import Textarea from "@/components/dashboard/common/ui/form/Textarea";
-import ToggleInput from "@/components/dashboard/common/ui/form/ToggleInput";
-import ArrowPathIcon from "@/components/dashboard/common/ui/icons/ArrowPathIcon";
-import SaveIcon from "@/components/dashboard/common/ui/icons/SaveIcon";
+import CKInput from "@/components/dashboard/common/form/CKInput";
+import CheckboxInput from "@/components/dashboard/common/form/CheckboxInput";
+import DateInput from "@/components/dashboard/common/form/DateInput";
+import Form from "@/components/dashboard/common/form/Form";
+import RadioInput from "@/components/dashboard/common/form/RadioInput";
+import SelectInput from "@/components/dashboard/common/form/SelectInput";
+import TextInput from "@/components/dashboard/common/form/TextInput";
+import Textarea from "@/components/dashboard/common/form/Textarea";
+import ToggleInput from "@/components/dashboard/common/form/ToggleInput";
+import ArrowPathIcon from "@/components/ui/icons/ArrowPathIcon";
+import SaveIcon from "@/components/ui/icons/SaveIcon";
 
 function CreateNewRolePage() {
 

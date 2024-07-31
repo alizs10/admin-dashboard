@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ChevronRightIcon from "../../common/ui/icons/ChevronRightIcon";
+import ChevronRightIcon from "../../../ui/icons/ChevronRightIcon";
 import PopupContainer from "../PopupContainer";
-import UserIcon from "../../common/ui/icons/UserIcon";
+import UserIcon from "../../../ui/icons/UserIcon";
 
 function UserPopup() {
     return (

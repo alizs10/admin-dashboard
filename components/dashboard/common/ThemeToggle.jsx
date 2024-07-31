@@ -1,7 +1,7 @@
 "use client"
 
-import MoonIcon from "./ui/icons/MoonIcon";
-import SunIcon from "./ui/icons/SunIcon";
+import MoonIcon from "../../ui/icons/MoonIcon";
+import SunIcon from "../../ui/icons/SunIcon";
 import { motion } from 'framer-motion';
 import { useTheme } from "next-themes";
 
