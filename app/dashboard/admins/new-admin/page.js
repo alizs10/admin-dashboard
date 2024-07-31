@@ -62,7 +62,7 @@ function page() {
                                             </DialogDescription>
                                         </DialogHeader>
                                         <div>
-                                            <SelectInput label={'User Role'} name={'role'} options={['admin', 'user']} space={1} key={'role'} />
+                                            <SelectInput label={'User Role'} name={'role'} options={['admin', 'user']} key={'role'} />
                                         </div>
 
                                         <DialogFooter>

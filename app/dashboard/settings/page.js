@@ -6,8 +6,8 @@ function SettingsIndexPage() {
     return (
         <div className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4">
-                <TextInput label={'site title'} name={'siteTitle'} space={1} key={'siteTitle'} />
-                <TextInput label={'tagline'} name={'tagline'} space={1} key={'tagline'} hint={'In a few words, explain what your site is about.'} />
+                <TextInput label={'site title'} name={'siteTitle'} key={'siteTitle'} />
+                <TextInput label={'tagline'} name={'tagline'} key={'tagline'} hint={'In a few words, explain what your site is about.'} />
             </div>
 
             <div className="flex justify-end items-center gap-x-2">

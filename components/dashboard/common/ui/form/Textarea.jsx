@@ -20,7 +20,7 @@ function Textarea({ name, label, space }) {
             <label className="text-base capitalize text-slate-600 dark:text-slate-300">{label}</label>
             <textarea
                 name={name}
-                placeholder="textarea here..."
+                placeholder={label + " here..."}
                 className="focus:outline-none text-lg p-1 bg-transparent text-slate-600 dark:text-slate-400"
             />
         </div>

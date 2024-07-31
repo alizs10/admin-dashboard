@@ -10,6 +10,7 @@ import BarsLeftIcon from "../common/ui/icons/BarsLeftIcon";
 import Link from "next/link";
 import DocSearchIcon from "../common/ui/icons/DocSearchIcon";
 import AcademicCapIcon from "../common/ui/icons/AcademicCapIcon";
+import LockClosedIcon from "../common/ui/icons/LockClosedIcon";
 
 export default function Sidebar({ toggleSidebar }) {
 
@@ -63,6 +64,12 @@ export default function Sidebar({ toggleSidebar }) {
             path: '/dashboard/seo',
             active: pathname === '/dashboard/seo' ? true : false,
             icon: <DocSearchIcon />
+        },
+        {
+            name: 'security',
+            path: '/dashboard/security',
+            active: pathname === '/dashboard/security' ? true : false,
+            icon: <LockClosedIcon />
         },
         {
             name: 'administrators',
