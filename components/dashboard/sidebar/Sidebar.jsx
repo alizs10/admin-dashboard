@@ -11,6 +11,7 @@ import Link from "next/link";
 import DocSearchIcon from "../common/ui/icons/DocSearchIcon";
 import AcademicCapIcon from "../common/ui/icons/AcademicCapIcon";
 import LockClosedIcon from "../common/ui/icons/LockClosedIcon";
+import UsersIcon from "../common/ui/icons/UsersIcon";
 
 export default function Sidebar({ toggleSidebar }) {
 
@@ -60,11 +61,18 @@ export default function Sidebar({ toggleSidebar }) {
             icon: <SquaresIcon />
         },
         {
-            name: 'seo',
-            path: '/dashboard/seo',
-            active: pathname === '/dashboard/seo' ? true : false,
-            icon: <DocSearchIcon />
+            name: 'users',
+            path: '/dashboard/users',
+            active: pathname === '/dashboard/users' ? true : false,
+            icon: <UsersIcon />
         },
+        {
+            name: 'administrators',
+            path: '/dashboard/admins',
+            active: pathname === '/dashboard/admins' ? true : false,
+            icon: <AcademicCapIcon />
+        },
+
         {
             name: 'security',
             path: '/dashboard/security',
@@ -72,10 +80,10 @@ export default function Sidebar({ toggleSidebar }) {
             icon: <LockClosedIcon />
         },
         {
-            name: 'administrators',
-            path: '/dashboard/admins',
-            active: pathname === '/dashboard/admins' ? true : false,
-            icon: <AcademicCapIcon />
+            name: 'seo',
+            path: '/dashboard/seo',
+            active: pathname === '/dashboard/seo' ? true : false,
+            icon: <DocSearchIcon />
         },
         {
             name: 'settings',
